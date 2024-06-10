@@ -32,7 +32,9 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
             Tag{` `}
-            <span className="font-normal">(#product, #webdevelopment, #idea)</span>
+            <span className="font-normal">
+              (#product, #webdevelopment, #idea)
+            </span>
           </span>
 
           <input
@@ -49,7 +51,11 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }) => {
             Cancel
           </Link>
 
-          <button type="submit" disabled={submitting} className="px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white">
+          <button
+            type="submit"
+            disabled={submitting}
+            className="px-5 py-1.5 text-sm bg-primary-orange rounded-full text-white"
+          >
             {submitting ? `${type}...` : type}
           </button>
         </div>
